@@ -104,3 +104,37 @@ Console.WriteLine(FindCharacterIndex("", 'a'));*/
     }
     return index;
 }*/
+
+
+/*string sample = " Привет, C#!";
+string trimmed = sample.Trim();
+string upper = sample.ToUpper();
+string lower = sample.ToLower();
+string replaced = sample.Replace(' ', '_');
+Console.WriteLine($"Исходная: [{sample}]");
+Console.WriteLine($"Без пробелов по краям: [{trimmed}]");
+Console.WriteLine($"Верхний регистр: [{upper}]");
+Console.WriteLine($"Нижний регистр: [{lower}]");
+Console.WriteLine($"Замена пробелов: [{replaced}]");*/
+
+
+/*string sample = " кот ";
+Console.WriteLine($"[{sample.Trim()}]");*/
+
+
+/*int CountWords(string text)
+{
+    string[] words = text.Split(' ', StringSplitOptions.RemoveEmptyEntries);
+    return words.Length;
+}*/
+Console.WriteLine(CountWords("Я изучаю C#"));
+Console.WriteLine(CountWords("  кот  дом  "));
+Console.WriteLine(CountWords(""));
+Console.WriteLine(CountWords("   "));
+
+
+int CountWords(string text)
+{
+    string[] words = text.Split(' ');
+    return words.Length;
+}
